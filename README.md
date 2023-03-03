@@ -1,38 +1,32 @@
-# create-svelte
+# Sveltekit Template
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This template includes:
 
-## Creating a project
+- [TypeScript](https://www.typescriptlang.org/) by default
+- [Pnpm](https://pnpm.io/) as a package manager
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Daisy UI](https://daisyui.com/) daisyUI components
+- [Prettier](https://prettier.io/) An opinionated code formatter
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Getting started
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once cloned, simply install dependencies and run:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm install
+pnpm dev
 ```
 
-## Building
+That's it!
 
-To create a production version of your app:
+## Code Formatting
 
 ```bash
-npm run build
+pnpm format
 ```
 
-You can preview the production build with `npm run preview`.
+To format automatically on save, add the [prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) to your VS Code and set `Prettier` as `Default Formatter`
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Theme
+
+The default daisy UI theme being used is `cupcake`. If you like to change it simply change on `app.html`
